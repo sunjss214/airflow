@@ -7,7 +7,7 @@ with DAG(
     dag_id="dags_conn_test",
     schedule=None,
     start_date=pendulum.datetime(2023, 3, 1, tz="Asia/Seoul"),
-    catchum=false
+    catchup=False
 ) as dag:
     
     t1= EmptyOperator(
